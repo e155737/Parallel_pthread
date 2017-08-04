@@ -3,7 +3,7 @@
 #include<memory.h>
 #include<pthread.h>
 
-#define DATA_SIZE 100
+#define DATA_SIZE 9000000
 #define MAX_DIV 2
 
 typedef struct _thread_arg_t{
