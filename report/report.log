@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2016.4.15)  5 AUG 2017 08:18
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2016.4.15)  6 AUG 2017 08:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -99,8 +99,7 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 ))
 (/usr/local/texlive/texmf-local/tex/latex/sty/mediabb.sty
 Package: mediabb 2006/10/26 v1.9 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp>
-)
-No file report.aux.
+) (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -135,6 +134,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 14.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 5.76599pt on input line 14.
+
 [1
 
 ]
@@ -148,63 +148,63 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 16.
  [2]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 36.
+(Font)              scaled to size 7.68799pt on input line 37.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 36.
+(Font)              scaled to size 7.68799pt on input line 37.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 37.
+(Font)              scaled to size 4.805pt on input line 38.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 37.
+(Font)              scaled to size 4.805pt on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 228.
+(Font)              <7> on input line 229.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 228.
+(Font)              <5> on input line 229.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 228.
+(Font)              scaled to size 6.72699pt on input line 229.
 File: nonpp-crop.pdf Graphic file (type pdf)
  <nonpp-crop.pdf>
-Overfull \hbox (81.10333pt too wide) in paragraph at lines 231--232
+Overfull \hbox (81.10333pt too wide) in paragraph at lines 232--233
  [] 
  []
 
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 232.
+(Font)              scaled to size 8.64899pt on input line 233.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 232.
+(Font)              scaled to size 8.64899pt on input line 233.
 [3] [4] [5] [6]
 File: pp-crop.pdf Graphic file (type pdf)
  <pp-crop.pdf>
-Overfull \hbox (81.10333pt too wide) in paragraph at lines 243--244
+Overfull \hbox (81.10333pt too wide) in paragraph at lines 244--245
  [] 
  []
 
 File: total_graph.pdf Graphic file (type pdf)
 <total_graph.pdf>
-Overfull \hbox (81.09912pt too wide) in paragraph at lines 255--256
+Overfull \hbox (81.09912pt too wide) in paragraph at lines 256--257
  [] 
  []
 
 [7]
 File: cpu_graph.pdf Graphic file (type pdf)
  <cpu_graph.pdf>
-Overfull \hbox (81.09912pt too wide) in paragraph at lines 267--268
+Overfull \hbox (81.09912pt too wide) in paragraph at lines 268--269
  [] 
  []
 
 File: image4-crop.pdf Graphic file (type pdf)
 <image4-crop.pdf>
-Overfull \hbox (81.09361pt too wide) in paragraph at lines 282--283
+Overfull \hbox (81.09361pt too wide) in paragraph at lines 283--284
  [] 
  []
 
 [8] [9] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 1222 strings out of 493777
- 15870 string characters out of 6151334
+ 1224 strings out of 493777
+ 15892 string characters out of 6151334
  99624 words of memory out of 5000000
  4743 multiletter control sequences out of 15000+600000
  14435 words of font info for 66 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  25i,13n,36p,4401b,727s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (9 pages, 20948 bytes).
+Output written on report.dvi (9 pages, 21080 bytes).

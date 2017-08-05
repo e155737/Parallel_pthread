@@ -9,7 +9,7 @@
 
 \title{並列分散処理 最終報告書}
 \author{135772H 上原可意\\145758G 森井大介\\155702F 大城由也\\155728K 津嘉山遼\\155737J 松本直也\\}
-\date{2017/8/4}
+\date{2017/8/6}
 
 \maketitle
 \newpage
@@ -31,6 +31,7 @@
 
 \newpage
 \section*{ソースコード}
+GithubリポジトリのURL https://github.com/e155737/Parallel\_pthread
 \begin{figure}[htbp]
  \begin{center}
   \begin{Verbatim}[frame=single,baselinestretch=1,fontsize=\footnotesize,numbers=left]
@@ -78,13 +79,13 @@ void quick_sort(int *pn,int left,int right){
 		j=left;
 		for(i=left+1;i<=right;i++){
 				if(*(pn + i) < *(pn + left)){
-						swap(pn+(++j),pn+i);
   \end{Verbatim}
  \end{center}
 \end{figure}
 \begin{figure}[htbp]
  \begin{center}
   \begin{Verbatim}[frame=single,baselinestretch=1,fontsize=\footnotesize,numbers=left]
+  						swap(pn+(++j),pn+i);
 				}
 		}
 		swap(pn+left,pn+j);
@@ -134,13 +135,13 @@ void thread_merge_func(void *arg){
 				len2=targ->length - len1;
 
 				c_targ[0].pn = (int *)malloc(sizeof(int) * len1);
-				c_targ[1].pn = (int *)malloc(sizeof(int) * len2);
   \end{Verbatim}
  \end{center}
 \end{figure}
 \begin{figure}[htbp]
  \begin{center}
   \begin{Verbatim}[frame=single,baselinestretch=1,fontsize=\footnotesize,numbers=left]
+				c_targ[1].pn = (int *)malloc(sizeof(int) * len2);
 				memcpy(c_targ[0].pn, targ->pn,len1 * sizeof(int));
 				memcpy(c_targ[1].pn, targ->pn + len1, len2 * sizeof(int));
 				c_targ[0].length = len1;
@@ -273,14 +274,14 @@ int main(){
 処理時間は、全体的に並列化した時の方が若干早くなっており、\\
 　CPU使用率は、すべての実行結果で並列化した時の方が高くなっている。\\
 \\
-　また、以下に実際に作成したかったプログラムを添付する。\\
+　また、以下に実際に作成したかったプログラムの動作を添付する。\\
 　(入力を受け取りランダムにシャッフルしているが、NULL文字まで受け取りシャッフルしてしまっている。)
 \begin{figure}[htbp]
  \begin{tabular}{c}
   \begin{minipage}{0.5\hsize}
    \begin{center}
    \includegraphics[width=10cm,height=7cm,angle=0]{image4-crop.pdf}
-   \caption{実際に仕上げたかったプログラム}
+   \caption{実際に仕上げたかったプログラムの動作}
    \end{center}
   \end{minipage}
  \end{tabular}
@@ -289,7 +290,6 @@ int main(){
 \section*{考察}
 今回初期の計画としては文字列を引数として与えてその文字列をランダムな確率でバラバラにしてソートして元の文字列に戻す、という処理を行いたかった。入力された文字列をshuffle関数というその時の時間でランダムに文字列を入れ替える関数を使って文字列をバラバラにした。しかし、C言語と文字列の相性の悪さがここで顕著に現れてきた。NULL文字の扱いや構造体へのデータの格納などと時間の関係上、実装が困難であると判断せざるを得なかった。そこで、ある大きさの数列をランダムに生成して並列化、ソートするという手法に切り替えました。またその際に比較対象として並列化していないソートを用意して比較した。\\
 　実行結果はグラフの通り、全体的に処理時間は並列化した方が早く、CPU使用率は並列化すると高くなった。CPU使用率が高くなるのは、並列化処理にかかる準備(スレッドの作成など)の際にCPUをしているためだろう。また、処理時間の差が若干しか見られないのは、マージソートの処理時間が最悪でもO(n logn)であるためそもそもの処理が高速であり、並列化の効果があまり顕著に感じられないからではないかと考察した。
-
 
 
 \end{document}
